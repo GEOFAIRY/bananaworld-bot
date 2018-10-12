@@ -16,14 +16,21 @@ var api_key = json.api_key;
 
 function intervalFunc() {
 	/*function to send a message to a given channel*/
-	const channel = client.channels.find('id', general);
+	var channel = client.channels.find('id', general);
 	channel.send("@here Beep");
 	var date = new Date();
 	var current_hour = date.getHours();
 	console.log('Beeped at ' + current_hour);
 }
 
-
+function hahFunc() {
+	/*function to send a message to a given channel*/
+	var channel = client.channels.find('id', '499829983213256705');
+	channel.send("hah");
+	var date = new Date();
+	var current_hour = date.getHours();
+	console.log('Beeped at ' + current_hour);
+}
 
 client.on('ready', () => {
 	/*function to say bot is on!*/
@@ -55,3 +62,7 @@ client.on('message', msg => {
 
 client.login(api_key);	//login the bot
 setInterval(intervalFunc, 3600000);		//set a function to run ever 30 minutes
+setTimeout(function(){ 
+
+        setInterval(hahFunc, 120);
+    }, 6000);
