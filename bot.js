@@ -1,5 +1,5 @@
 ﻿/*
-A terrible discord bot
+A terrible discord bot that is completely useless and not funny
 
 Kyran Stagg (11-Oct-2018)
 */
